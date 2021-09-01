@@ -1,5 +1,6 @@
 #include <AirQuality.h>
 #include <Arduino.h>
+
 AirQuality airqualitysensor;
 #define air 32
 int current_quality =-1;
@@ -23,7 +24,6 @@ void loop()
             Serial.println("Fresh air");
     }
 }
-
 
 ISR(TIMER2_OVF_vect)
 {
